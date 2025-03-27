@@ -1,16 +1,18 @@
+import os
 import numpy as np
 import soundfile as sf
-from tqdm import tqdm  # Для прогресс-бара
-import os
+import json
+from tqdm import tqdm
 
-# Настройки датасета
+# Настройки
 DATASET_DIR = "morse_dataset"
 os.makedirs(DATASET_DIR, exist_ok=True)
 
 SAMPLE_RATE = 8000
 TONE_FREQ = 600
-DOT_DURATION = 0.1
-NUM_SAMPLES = 1000  # Количество примеров
+FIXED_DOT_DURATION = 0.1
+SPEEDS = [10, 25, 50, 65, 80]
+SAMPLES_PER_SPEED = 100
 
 # Алфавит Морзе
 MORSE_CODE = {
@@ -26,42 +28,57 @@ MORSE_CODE = {
 }
 
 
-def generate_morse_audio(text, sample_rate, tone_freq, dot_duration):
-    """Генерация аудиосигнала из текста."""
-    t_dot = np.linspace(0, dot_duration, int(sample_rate * dot_duration), False)
-    tone_dot = np.sin(2 * np.pi * tone_freq * t_dot)
+def text_to_morse(text):
+    return ' '.join([MORSE_CODE[char] for char in text.upper() if char in MORSE_CODE])
+
+
+def generate_morse_audio(text, speed_factor=1.0):
+    t_dot = np.linspace(0, FIXED_DOT_DURATION, int(SAMPLE_RATE * FIXED_DOT_DURATION), False)
+    tone_dot = np.sin(2 * np.pi * TONE_FREQ * t_dot)
     tone_dash = np.sin(
-        2 * np.pi * tone_freq * np.linspace(0, 3 * dot_duration, int(sample_rate * 3 * dot_duration), False))
-    silence = np.zeros(int(sample_rate * dot_duration))
+        2 * np.pi * TONE_FREQ * np.linspace(0, 3 * FIXED_DOT_DURATION, int(SAMPLE_RATE * 3 * FIXED_DOT_DURATION),
+                                            False))
+
+    intra_pause = np.zeros(int(SAMPLE_RATE * FIXED_DOT_DURATION / speed_factor))
+    inter_pause = np.zeros(int(SAMPLE_RATE * 3 * FIXED_DOT_DURATION / speed_factor))
 
     signal = []
     for char in text.upper():
         if char in MORSE_CODE:
-            for symbol in MORSE_CODE[char]:
+            code = MORSE_CODE[char]
+            for symbol in code:
                 signal.extend(tone_dot if symbol == '.' else tone_dash)
-                signal.extend(silence)  # Пауза между символами
-            signal.extend(silence * 2)  # Пауза между словами
+                signal.extend(intra_pause)
+            signal.extend(inter_pause if char != ' ' else intra_pause * 7)
     return np.array(signal)
 
 
-# Генерация датасета
-metadata = []
-for i in tqdm(range(NUM_SAMPLES)):
-    # Случайный текст (3-8 символов)
-    length = np.random.randint(3, 9)
-    text = ''.join(np.random.choice(list(MORSE_CODE.keys()), size=length))
+# Список для хранения данных
+dataset = []
 
-    # Генерация аудио
-    audio = generate_morse_audio(text, SAMPLE_RATE, TONE_FREQ, DOT_DURATION)
+for wpm in tqdm(SPEEDS, desc="Generating"):
+    speed_factor = wpm / 20
 
-    # Сохранение
-    filename = f"morse_{i:04d}.wav"
-    sf.write(os.path.join(DATASET_DIR, filename), audio, SAMPLE_RATE)
-    metadata.append(f"{filename},{text}\n")
+    for i in range(SAMPLES_PER_SPEED):
+        length = np.random.randint(5, 9)
+        text = ''.join(np.random.choice(list(MORSE_CODE.keys()), size=length))
+        morse_code = text_to_morse(text)
 
-# Сохранение метаданных
-with open(os.path.join(DATASET_DIR, "labels.csv"), "w") as f:
-    f.write("filename,text\n")
-    f.writelines(metadata)
+        audio = generate_morse_audio(text, speed_factor)
+        filename = f"morse_{wpm}wpm_{i:04d}.wav"
+        sf.write(os.path.join(DATASET_DIR, filename), audio, SAMPLE_RATE)
 
-print(f"Датасет создан в {DATASET_DIR}")
+        dataset.append({
+            "file": filename,
+            "wpm": wpm,
+            "text": text,
+            "code": morse_code
+        })
+
+# Сохраняем в JSON
+with open(os.path.join(DATASET_DIR, "decodings.json"), "w") as f:
+    json.dump(dataset, f, indent=2)
+
+print(f"\nDataset generated in {DATASET_DIR}")
+print(f"Total files: {len(dataset)}")
+print(f"Decodings saved to decodings.json")
