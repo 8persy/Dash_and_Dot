@@ -53,32 +53,33 @@ def generate_morse_audio(text, speed_factor=1.0):
     return np.array(signal)
 
 
-# Список для хранения данных
-dataset = []
+def generate_dataset():
+    # Список для хранения данных
+    dataset = []
 
-for wpm in tqdm(SPEEDS, desc="Generating"):
-    speed_factor = wpm / 20
+    for wpm in tqdm(SPEEDS, desc="Generating"):
+        speed_factor = wpm / 20
 
-    for i in range(SAMPLES_PER_SPEED):
-        length = np.random.randint(5, 9)
-        text = ''.join(np.random.choice(list(MORSE_CODE.keys()), size=length))
-        morse_code = text_to_morse(text)
+        for i in range(SAMPLES_PER_SPEED):
+            length = np.random.randint(5, 9)
+            text = ''.join(np.random.choice(list(MORSE_CODE.keys()), size=length))
+            morse_code = text_to_morse(text)
 
-        audio = generate_morse_audio(text, speed_factor)
-        filename = f"morse_{wpm}wpm_{i:04d}.wav"
-        sf.write(os.path.join(DATASET_DIR, filename), audio, SAMPLE_RATE)
+            audio = generate_morse_audio(text, speed_factor)
+            filename = f"morse_{wpm}wpm_{i:04d}.wav"
+            sf.write(os.path.join(DATASET_DIR, filename), audio, SAMPLE_RATE)
 
-        dataset.append({
-            "file": filename,
-            "wpm": wpm,
-            "text": text,
-            "code": morse_code
-        })
+            dataset.append({
+                "file": filename,
+                "wpm": wpm,
+                "text": text,
+                "code": morse_code
+            })
 
-# Сохраняем в JSON
-with open(os.path.join(DATASET_DIR, "decodings.json"), "w") as f:
-    json.dump(dataset, f, indent=2)
+    # Сохраняем в JSON
+    with open(os.path.join(DATASET_DIR, "decodings.json"), "w") as f:
+        json.dump(dataset, f, indent=2)
 
-print(f"\nDataset generated in {DATASET_DIR}")
-print(f"Total files: {len(dataset)}")
-print(f"Decodings saved to decodings.json")
+
+if __name__ == "__main__":
+    generate_dataset()
