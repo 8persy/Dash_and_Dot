@@ -11,6 +11,9 @@ MORSE_CODE_DICT = {
     '(': '-.--.', ')': '-.--.-', ' ': ' '
 }
 
+REVERSE_MORSE_DICT = {v: k for k, v in MORSE_CODE_DICT.items()}
+
+
 def text_to_morse(text: str) -> str:
     morse_code = []
     for char in text.upper():
@@ -18,4 +21,15 @@ def text_to_morse(text: str) -> str:
             morse_code.append(MORSE_CODE_DICT[char])
         else:
             continue
-    return ' '.join(morse_code) 
+    return ' '.join(morse_code)
+
+
+def morse_to_text(morse_code: str) -> str:
+    text = []
+    print(morse_code.replace('   ', '  ').split(' '))
+    for code in morse_code.replace('   ', '  ').split(' '):
+        if code in REVERSE_MORSE_DICT:
+            text.append(REVERSE_MORSE_DICT[code])
+        elif code == '':
+            text.append(' ')
+    return ''.join(text)
