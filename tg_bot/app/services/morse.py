@@ -1,6 +1,4 @@
 import numpy as np
-import soundfile as sf
-import os
 
 
 MORSE_CODE_DICT = {
@@ -66,12 +64,3 @@ def generate_morse_audio(
                 signal.extend(intra_pause)
             signal.extend(inter_pause if char != ' ' else intra_pause * 7)
     return np.array(signal)
-
-
-def download_audio(path, text, sample_rate=8000):
-    audio = generate_morse_audio(text=text)
-    file_name = 'test.wav'
-    sf.write(os.path.join(path, file_name), audio, sample_rate)
-
-
-download_audio('', 'test')
