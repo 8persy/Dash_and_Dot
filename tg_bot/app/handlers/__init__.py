@@ -1,3 +1,9 @@
-from .user import user_router
+from .common import common_router
+from .morse import morse_router
 
-__all__ = ["user_router"]
+routers = [
+    common_router,
+    morse_router
+]
+
+__all__ = ["routers"]
