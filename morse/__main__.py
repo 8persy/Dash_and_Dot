@@ -18,14 +18,18 @@ def main(argv: list[str] = None) -> None:
             or if input file does not exist.
     """
     parsed_args = _parse_args(argv)
-    file = parsed_args.WAVFILE
+    file = parsed_args.FILEPATH
+    is_mp3 = parsed_args.is_mp3
 
     if not Path(file).exists():
         sys.stderr.write(f"File {file} not found, exiting.\n")
         sys.exit(1)
 
     try:
-        decoded = MorseCode.from_wavfile(file).decode()
+        if is_mp3:
+            decoded = MorseCode.from_mp3file(file).decode()
+        else:
+            decoded = MorseCode.from_wavfile(file).decode()
         sys.stdout.write(decoded + "\n")
     except UserWarning as err:
         sys.stderr.write(f"{err}\n")
@@ -38,7 +42,8 @@ def _parse_args(args: list[str]) -> argparse.Namespace:
         description="""Read audio file in WAV format, extract the morse code and
         write translated text into standard output."""
     )
-    parser.add_argument("WAVFILE", help="Input audio file")
+    parser.add_argument("FILEPATH", help="Input audio file")
+    parser.add_argument('--is_mp3', action='store_true')
     return parser.parse_args(args)
 
 
