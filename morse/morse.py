@@ -10,7 +10,7 @@ import numpy as np
 import sklearn.cluster
 import sklearn.exceptions
 
-from .io import read_wave
+from .io import read_wave, read_mp3
 from .processing import smoothed_power, squared_signal
 
 
@@ -49,6 +49,27 @@ class MorseCode:
             MorseCode: class instance, with 1D binary input data
         """
         sample_rate, wave = read_wave(file)
+        window_size = int(0.01 * sample_rate)
+        envelope = smoothed_power(wave, window_size)
+        square_data = squared_signal(envelope)
+
+        return cls(square_data)
+
+    @classmethod
+    def from_mp3file(cls, file: os.PathLike) -> "MorseCode":
+        """Construct from wave file
+
+        - Read in wave file
+        - Calculate signal envelope (smoothing of 0.1 seconds)
+        - Apply squaring (threshold: 50% of max smoothed data value)
+
+        Args:
+            file (os.PathLike): path to input WAV file
+
+        Returns:
+            MorseCode: class instance, with 1D binary input data
+        """
+        sample_rate, wave = read_mp3(file)
         window_size = int(0.01 * sample_rate)
         envelope = smoothed_power(wave, window_size)
         square_data = squared_signal(envelope)

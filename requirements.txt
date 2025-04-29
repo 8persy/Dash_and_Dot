@@ -20,3 +20,4 @@ yarl==1.18.3
 numpy~=2.2.4
 scikit-learn~=1.6.1
 soundfile~=0.13.1
+pydub~=0.25.1
