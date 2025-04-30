@@ -7,12 +7,12 @@ from aiogram import Router, types
 from aiogram.filters import Command, StateFilter
 from aiogram.fsm.context import FSMContext
 from aiogram.types import FSInputFile
-from app.services.morse import (text_to_morse,
-                                morse_to_text,
-                                generate_morse_audio)
 
+from tg_bot.app.services.morse import (text_to_morse,
+                                       morse_to_text,
+                                       generate_morse_audio)
 
-from app.states.morse_states import MorseStates
+from tg_bot.app.states.morse_states import MorseStates
 
 
 morse_router = Router()

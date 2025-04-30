@@ -1,5 +1,5 @@
 import asyncio
-from app.bot import get_bot_and_dispatcher
+from tg_bot.app.bot import get_bot_and_dispatcher
 
 
 async def main():

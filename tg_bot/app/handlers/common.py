@@ -12,4 +12,6 @@ async def process_start_command(message: types.Message):
         "Доступные команды:\n"
         "/text_to_morse\n"
         "/morse_to_text\n"
-        "/text_to_audio\n")
+        "/text_to_audio\n"
+        "/audio_to_text\n"
+    )
