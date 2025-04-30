@@ -2,7 +2,7 @@ import logging
 from aiogram import Bot, Dispatcher
 
 from config import BOT_TOKEN
-from app.handlers import routers
+from tg_bot.app.handlers import routers
 
 
 logging.basicConfig(level=logging.INFO)
