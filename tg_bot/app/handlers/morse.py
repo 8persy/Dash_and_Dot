@@ -4,7 +4,7 @@ import tempfile
 
 
 from aiogram import Router, types
-from aiogram.filters import Command, StateFilter
+from aiogram.filters import StateFilter
 from aiogram.fsm.context import FSMContext
 from aiogram.types import FSInputFile
 
@@ -13,12 +13,15 @@ from tg_bot.app.services.morse import (text_to_morse,
                                        generate_morse_audio)
 
 from tg_bot.app.states.morse_states import MorseStates
+from tg_bot.app.keyboards.keyboards import get_main_keyboard
 
 
 morse_router = Router()
 
 
-@morse_router.message(StateFilter(None), Command('text_to_morse'))
+@morse_router.message(
+        StateFilter(None), lambda msg: msg.text == "Текст в Морзе"
+)
 async def cmd_text_to_morse(message: types.Message, state: FSMContext):
     await message.answer(
         "Отправь мне текст на английском, и я переведу его в код Морзе.\n"
@@ -34,15 +37,22 @@ async def process_text_to_morse_cmd(message: types.Message, state: FSMContext):
         morse_text = text_to_morse(text)
         await message.answer(
             f"Код Морзе:\n<code>{morse_text}</code>",
-            parse_mode='HTML')
+            parse_mode='HTML',
+            reply_markup=get_main_keyboard()
+        )
         await state.clear()
     except Exception as e:
-        await message.answer("Произошла ошибка при переводе в код Морзе")
+        await message.answer(
+            "Произошла ошибка при переводе в код Морзе",
+            reply_markup=get_main_keyboard()
+        )
         print(f"Error: {e}")
         await state.clear()
 
 
-@morse_router.message(StateFilter(None), Command('morse_to_text'))
+@morse_router.message(
+        StateFilter(None), lambda msg: msg.text == "Морзе в текст"
+)
 async def cmd_morse_to_text(message: types.Message, state: FSMContext):
     await message.answer(
         "Отправь мне код Морзе, и я переведу его на английский язык.\n"
@@ -58,15 +68,22 @@ async def process_morse_to_text_cmd(message: types.Message, state: FSMContext):
         english_text = morse_to_text(text)
         await message.answer(
             f"Текст на английском:\n<code>{english_text}</code>",
-            parse_mode='HTML')
+            parse_mode='HTML',
+            reply_markup=get_main_keyboard()
+        )
         await state.clear()
     except Exception as e:
-        await message.answer("Произошла ошибка при переводе")
+        await message.answer(
+            "Произошла ошибка при переводе",
+            reply_markup=get_main_keyboard()
+        )
         print(f"Error: {e}")
         await state.clear()
 
 
-@morse_router.message(StateFilter(None), Command('text_to_audio'))
+@morse_router.message(
+        StateFilter(None), lambda msg: msg.text == "Текст в аудио"
+)
 async def cmd_text_to_audio(message: types.Message, state: FSMContext):
     await message.answer(
         "Отправь мне текст на английском, "
@@ -90,15 +107,19 @@ async def process_text_to_audio_cmd(message: types.Message, state: FSMContext):
             audio_file = FSInputFile(file_path)
             await message.answer(
                 f"Код Морзе:\n<code>{morse_text}</code>",
-                parse_mode='HTML'
-                )
+                parse_mode='HTML',
+                reply_markup=get_main_keyboard()
+            )
             await message.answer_audio(
                 audio_file,
                 caption="Аудио версия кода Морзе"
             )
 
     except Exception as e:
-        await message.answer("Произошла ошибка при переводе в аудио")
+        await message.answer(
+            "Произошла ошибка при переводе в аудио",
+            reply_markup=get_main_keyboard()
+        )
         print(f"Error: {e}")
     finally:
         await state.clear()
