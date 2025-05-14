@@ -2078,8 +2078,8 @@
   {
     "file": "morse_65wpm_0046.wav",
     "wpm": 65,
-    "text": "M  TQ92",
-    "code": "-- / / - --.- ----. ..---"
+    "text": "M TQ92",
+    "code": "-- / - --.- ----. ..---"
   },
   {
     "file": "morse_65wpm_0047.wav",
