@@ -236,16 +236,23 @@ class MorseCode:
         cluster_sort_idx = np.argsort(clustering.cluster_centers_.flatten()).tolist()
 
         # This index breaks dashes/dots into characters
-        intra_space_label = cluster_sort_idx.index(0)
-        char_break_idx = np.nonzero(clustering.labels_ != intra_space_label)[0] + 1
+        intra_space_label = cluster_sort_idx[0]
+        char_space_label = cluster_sort_idx[1]
+        if np.abs(clustering.cluster_centers_[char_space_label] - clustering.cluster_centers_[intra_space_label]) < 10 ** -5:
+            char_break_idx = np.nonzero((clustering.labels_ != intra_space_label) & (clustering.labels_ != char_space_label))[0] + 1
+            char_break_idx1 = np.nonzero(clustering.labels_ != intra_space_label)[0] + 1
+        else:
+            char_break_idx = np.nonzero(clustering.labels_ != intra_space_label)[0] + 1
+
+        #  & ((clustering.cluster_centers_[char_space_label] != clustering.cluster_centers_[intra_space_label]) | (clustering.labels_ != char_space_label))
 
         char_or_word_space_arr = clustering.labels_[
-            clustering.labels_ != intra_space_label
+            (clustering.labels_ != intra_space_label)
         ]
 
         # This index breaks character list into word lists
         if distinct_clusters == 3:
-            word_space_label = cluster_sort_idx.index(2)
+            word_space_label = cluster_sort_idx[2]
             word_space_idx = (
                 np.nonzero(char_or_word_space_arr == word_space_label)[0] + 1
             )
