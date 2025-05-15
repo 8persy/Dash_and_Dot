@@ -59,8 +59,12 @@ def generate_morse_audio(
     for char in text.upper():
         if char in MORSE_CODE_DICT:
             code = MORSE_CODE_DICT[char]
+            if char == ' ':
+                signal.extend(intra_pause * 7)
+                continue
             for symbol in code:
                 signal.extend(tone_dot if symbol == '.' else tone_dash)
                 signal.extend(intra_pause)
             signal.extend(inter_pause if char != ' ' else intra_pause * 7)
     return np.array(signal)
+
