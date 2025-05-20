@@ -2,91 +2,361 @@
   {
     "file": "morse_0.05dur_0000.wav",
     "duration": 0.05,
-    "text": "M4HTQ",
-    "code": "-- ....- .... - --.-"
+    "text": "R DPW",
+    "code": ".-. / -.. .--. .--"
   },
   {
     "file": "morse_0.05dur_0001.wav",
     "duration": 0.05,
-    "text": "Y5D75QX",
-    "code": "-.-- ..... -.. --... ..... --.- -..-"
+    "text": "718GD7D",
+    "code": "--... .---- ---.. --. -.. --... -.."
   },
   {
     "file": "morse_0.05dur_0002.wav",
     "duration": 0.05,
-    "text": "YY2 V",
-    "code": "-.-- -.-- ..--- / ...-"
+    "text": "UH3QI",
+    "code": "..- .... ...-- --.- .."
+  },
+  {
+    "file": "morse_0.05dur_0003.wav",
+    "duration": 0.05,
+    "text": "ACT39DJ5",
+    "code": ".- -.-. - ...-- ----. -.. .--- ....."
+  },
+  {
+    "file": "morse_0.05dur_0004.wav",
+    "duration": 0.05,
+    "text": "1USK2",
+    "code": ".---- ..- ... -.- ..---"
+  },
+  {
+    "file": "morse_0.05dur_0005.wav",
+    "duration": 0.05,
+    "text": "Z2P6D69K",
+    "code": "--.. ..--- .--. -.... -.. -.... ----. -.-"
+  },
+  {
+    "file": "morse_0.05dur_0006.wav",
+    "duration": 0.05,
+    "text": "KH001",
+    "code": "-.- .... ----- ----- .----"
+  },
+  {
+    "file": "morse_0.05dur_0007.wav",
+    "duration": 0.05,
+    "text": "G0UE1VZ",
+    "code": "--. ----- ..- . .---- ...- --.."
+  },
+  {
+    "file": "morse_0.05dur_0008.wav",
+    "duration": 0.05,
+    "text": "IGZ0L",
+    "code": ".. --. --.. ----- .-.."
+  },
+  {
+    "file": "morse_0.05dur_0009.wav",
+    "duration": 0.05,
+    "text": "YLXU6L",
+    "code": "-.-- .-.. -..- ..- -.... .-.."
   },
   {
     "file": "morse_0.07dur_0000.wav",
     "duration": 0.07,
-    "text": "6HEMS5",
-    "code": "-.... .... . -- ... ....."
+    "text": "R0YCA",
+    "code": ".-. ----- -.-- -.-. .-"
   },
   {
     "file": "morse_0.07dur_0001.wav",
     "duration": 0.07,
-    "text": "H9O9C HL",
-    "code": ".... ----. --- ----. -.-. / .... .-.."
+    "text": "3M9R0JR",
+    "code": "...-- -- ----. .-. ----- .--- .-."
   },
   {
     "file": "morse_0.07dur_0002.wav",
     "duration": 0.07,
-    "text": "J7AF94M",
-    "code": ".--- --... .- ..-. ----. ....- --"
+    "text": "W5FS4A3D",
+    "code": ".-- ..... ..-. ... ....- .- ...-- -.."
+  },
+  {
+    "file": "morse_0.07dur_0003.wav",
+    "duration": 0.07,
+    "text": "US4S3UU",
+    "code": "..- ... ....- ... ...-- ..- ..-"
+  },
+  {
+    "file": "morse_0.07dur_0004.wav",
+    "duration": 0.07,
+    "text": "YIM4K",
+    "code": "-.-- .. -- ....- -.-"
+  },
+  {
+    "file": "morse_0.07dur_0005.wav",
+    "duration": 0.07,
+    "text": "GXM0Z25Q",
+    "code": "--. -..- -- ----- --.. ..--- ..... --.-"
+  },
+  {
+    "file": "morse_0.07dur_0006.wav",
+    "duration": 0.07,
+    "text": "H9X 4",
+    "code": ".... ----. -..- / ....-"
+  },
+  {
+    "file": "morse_0.07dur_0007.wav",
+    "duration": 0.07,
+    "text": "MKBIC",
+    "code": "-- -.- -... .. -.-."
+  },
+  {
+    "file": "morse_0.07dur_0008.wav",
+    "duration": 0.07,
+    "text": "25EES3B",
+    "code": "..--- ..... . . ... ...-- -..."
+  },
+  {
+    "file": "morse_0.07dur_0009.wav",
+    "duration": 0.07,
+    "text": "86CLEZ",
+    "code": "---.. -.... -.-. .-.. . --.."
   },
   {
     "file": "morse_0.1dur_0000.wav",
     "duration": 0.1,
-    "text": "81FTCZ",
-    "code": "---.. .---- ..-. - -.-. --.."
+    "text": "160WK0ID",
+    "code": ".---- -.... ----- .-- -.- ----- .. -.."
   },
   {
     "file": "morse_0.1dur_0001.wav",
     "duration": 0.1,
-    "text": "3V XYW0",
-    "code": "...-- ...- / -..- -.-- .-- -----"
+    "text": "Z456QO",
+    "code": "--.. ....- ..... -.... --.- ---"
   },
   {
     "file": "morse_0.1dur_0002.wav",
     "duration": 0.1,
-    "text": "B1X9E3ES",
-    "code": "-... .---- -..- ----. . ...-- . ..."
+    "text": "WZGFC",
+    "code": ".-- --.. --. ..-. -.-."
+  },
+  {
+    "file": "morse_0.1dur_0003.wav",
+    "duration": 0.1,
+    "text": "3VYDZ2",
+    "code": "...-- ...- -.-- -.. --.. ..---"
+  },
+  {
+    "file": "morse_0.1dur_0004.wav",
+    "duration": 0.1,
+    "text": "V7TAB U",
+    "code": "...- --... - .- -... / ..-"
+  },
+  {
+    "file": "morse_0.1dur_0005.wav",
+    "duration": 0.1,
+    "text": "  YN6",
+    "code": "/ / -.-- -. -...."
+  },
+  {
+    "file": "morse_0.1dur_0006.wav",
+    "duration": 0.1,
+    "text": "ZWT4BP1",
+    "code": "--.. .-- - ....- -... .--. .----"
+  },
+  {
+    "file": "morse_0.1dur_0007.wav",
+    "duration": 0.1,
+    "text": "TIBNBE",
+    "code": "- .. -... -. -... ."
+  },
+  {
+    "file": "morse_0.1dur_0008.wav",
+    "duration": 0.1,
+    "text": "FXFO ",
+    "code": "..-. -..- ..-. --- /"
+  },
+  {
+    "file": "morse_0.1dur_0009.wav",
+    "duration": 0.1,
+    "text": "3XZQT",
+    "code": "...-- -..- --.. --.- -"
   },
   {
     "file": "morse_0.11dur_0000.wav",
     "duration": 0.11,
-    "text": "L7B1Z",
-    "code": ".-.. --... -... .---- --.."
+    "text": "5QN 1A",
+    "code": "..... --.- -. / .---- .-"
   },
   {
     "file": "morse_0.11dur_0001.wav",
     "duration": 0.11,
-    "text": "FR8QE5",
-    "code": "..-. .-. ---.. --.- . ....."
+    "text": "9STYU",
+    "code": "----. ... - -.-- ..-"
   },
   {
     "file": "morse_0.11dur_0002.wav",
     "duration": 0.11,
-    "text": "EWDZHXB",
-    "code": ". .-- -.. --.. .... -..- -..."
+    "text": "7BHDW",
+    "code": "--... -... .... -.. .--"
+  },
+  {
+    "file": "morse_0.11dur_0003.wav",
+    "duration": 0.11,
+    "text": "ZQ6W17AQ",
+    "code": "--.. --.- -.... .-- .---- --... .- --.-"
+  },
+  {
+    "file": "morse_0.11dur_0004.wav",
+    "duration": 0.11,
+    "text": "MF2O8F",
+    "code": "-- ..-. ..--- --- ---.. ..-."
+  },
+  {
+    "file": "morse_0.11dur_0005.wav",
+    "duration": 0.11,
+    "text": "85FC8",
+    "code": "---.. ..... ..-. -.-. ---.."
+  },
+  {
+    "file": "morse_0.11dur_0006.wav",
+    "duration": 0.11,
+    "text": "VDN47VSJ",
+    "code": "...- -.. -. ....- --... ...- ... .---"
+  },
+  {
+    "file": "morse_0.11dur_0007.wav",
+    "duration": 0.11,
+    "text": "SP9GKP6",
+    "code": "... .--. ----. --. -.- .--. -...."
+  },
+  {
+    "file": "morse_0.11dur_0008.wav",
+    "duration": 0.11,
+    "text": "8Z6FU",
+    "code": "---.. --.. -.... ..-. ..-"
+  },
+  {
+    "file": "morse_0.11dur_0009.wav",
+    "duration": 0.11,
+    "text": "MUF80VGW",
+    "code": "-- ..- ..-. ---.. ----- ...- --. .--"
   },
   {
     "file": "morse_0.12dur_0000.wav",
     "duration": 0.12,
-    "text": "BBAMTC4Q",
-    "code": "-... -... .- -- - -.-. ....- --.-"
+    "text": "6ILZKCZ2",
+    "code": "-.... .. .-.. --.. -.- -.-. --.. ..---"
   },
   {
     "file": "morse_0.12dur_0001.wav",
     "duration": 0.12,
-    "text": "39XY0R",
-    "code": "...-- ----. -..- -.-- ----- .-."
+    "text": "PBLODX",
+    "code": ".--. -... .-.. --- -.. -..-"
   },
   {
     "file": "morse_0.12dur_0002.wav",
     "duration": 0.12,
-    "text": "9U7SVF7O",
-    "code": "----. ..- --... ... ...- ..-. --... ---"
+    "text": "86WYJ3Z",
+    "code": "---.. -.... .-- -.-- .--- ...-- --.."
+  },
+  {
+    "file": "morse_0.12dur_0003.wav",
+    "duration": 0.12,
+    "text": "3P29Q8",
+    "code": "...-- .--. ..--- ----. --.- ---.."
+  },
+  {
+    "file": "morse_0.12dur_0004.wav",
+    "duration": 0.12,
+    "text": "QT02 I",
+    "code": "--.- - ----- ..--- / .."
+  },
+  {
+    "file": "morse_0.12dur_0005.wav",
+    "duration": 0.12,
+    "text": "L9ME4DC",
+    "code": ".-.. ----. -- . ....- -.. -.-."
+  },
+  {
+    "file": "morse_0.12dur_0006.wav",
+    "duration": 0.12,
+    "text": "KI64UY",
+    "code": "-.- .. -.... ....- ..- -.--"
+  },
+  {
+    "file": "morse_0.12dur_0007.wav",
+    "duration": 0.12,
+    "text": "G598861",
+    "code": "--. ..... ----. ---.. ---.. -.... .----"
+  },
+  {
+    "file": "morse_0.12dur_0008.wav",
+    "duration": 0.12,
+    "text": "Z1QR Z3W",
+    "code": "--.. .---- --.- .-. / --.. ...-- .--"
+  },
+  {
+    "file": "morse_0.12dur_0009.wav",
+    "duration": 0.12,
+    "text": "DB5G7C",
+    "code": "-.. -... ..... --. --... -.-."
+  },
+  {
+    "file": "morse_0.15dur_0000.wav",
+    "duration": 0.15,
+    "text": "0ZOTS",
+    "code": "----- --.. --- - ..."
+  },
+  {
+    "file": "morse_0.15dur_0001.wav",
+    "duration": 0.15,
+    "text": "2IHRE",
+    "code": "..--- .. .... .-. ."
+  },
+  {
+    "file": "morse_0.15dur_0002.wav",
+    "duration": 0.15,
+    "text": "PFOJFO",
+    "code": ".--. ..-. --- .--- ..-. ---"
+  },
+  {
+    "file": "morse_0.15dur_0003.wav",
+    "duration": 0.15,
+    "text": "JAZHOPWB",
+    "code": ".--- .- --.. .... --- .--. .-- -..."
+  },
+  {
+    "file": "morse_0.15dur_0004.wav",
+    "duration": 0.15,
+    "text": "ZRAIA",
+    "code": "--.. .-. .- .. .-"
+  },
+  {
+    "file": "morse_0.15dur_0005.wav",
+    "duration": 0.15,
+    "text": "3FPY1",
+    "code": "...-- ..-. .--. -.-- .----"
+  },
+  {
+    "file": "morse_0.15dur_0006.wav",
+    "duration": 0.15,
+    "text": "INSV6",
+    "code": ".. -. ... ...- -...."
+  },
+  {
+    "file": "morse_0.15dur_0007.wav",
+    "duration": 0.15,
+    "text": "7KTNBQOI",
+    "code": "--... -.- - -. -... --.- --- .."
+  },
+  {
+    "file": "morse_0.15dur_0008.wav",
+    "duration": 0.15,
+    "text": "MWMQC",
+    "code": "-- .-- -- --.- -.-."
+  },
+  {
+    "file": "morse_0.15dur_0009.wav",
+    "duration": 0.15,
+    "text": "EZAR18E",
+    "code": ". --.. .- .-. .---- ---.. ."
   }
 ]
