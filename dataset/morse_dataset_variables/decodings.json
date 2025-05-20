@@ -1,0 +1,92 @@
+[
+  {
+    "file": "morse_0.05dur_0000.wav",
+    "duration": 0.05,
+    "text": "M4HTQ",
+    "code": "-- ....- .... - --.-"
+  },
+  {
+    "file": "morse_0.05dur_0001.wav",
+    "duration": 0.05,
+    "text": "Y5D75QX",
+    "code": "-.-- ..... -.. --... ..... --.- -..-"
+  },
+  {
+    "file": "morse_0.05dur_0002.wav",
+    "duration": 0.05,
+    "text": "YY2 V",
+    "code": "-.-- -.-- ..--- / ...-"
+  },
+  {
+    "file": "morse_0.07dur_0000.wav",
+    "duration": 0.07,
+    "text": "6HEMS5",
+    "code": "-.... .... . -- ... ....."
+  },
+  {
+    "file": "morse_0.07dur_0001.wav",
+    "duration": 0.07,
+    "text": "H9O9C HL",
+    "code": ".... ----. --- ----. -.-. / .... .-.."
+  },
+  {
+    "file": "morse_0.07dur_0002.wav",
+    "duration": 0.07,
+    "text": "J7AF94M",
+    "code": ".--- --... .- ..-. ----. ....- --"
+  },
+  {
+    "file": "morse_0.1dur_0000.wav",
+    "duration": 0.1,
+    "text": "81FTCZ",
+    "code": "---.. .---- ..-. - -.-. --.."
+  },
+  {
+    "file": "morse_0.1dur_0001.wav",
+    "duration": 0.1,
+    "text": "3V XYW0",
+    "code": "...-- ...- / -..- -.-- .-- -----"
+  },
+  {
+    "file": "morse_0.1dur_0002.wav",
+    "duration": 0.1,
+    "text": "B1X9E3ES",
+    "code": "-... .---- -..- ----. . ...-- . ..."
+  },
+  {
+    "file": "morse_0.11dur_0000.wav",
+    "duration": 0.11,
+    "text": "L7B1Z",
+    "code": ".-.. --... -... .---- --.."
+  },
+  {
+    "file": "morse_0.11dur_0001.wav",
+    "duration": 0.11,
+    "text": "FR8QE5",
+    "code": "..-. .-. ---.. --.- . ....."
+  },
+  {
+    "file": "morse_0.11dur_0002.wav",
+    "duration": 0.11,
+    "text": "EWDZHXB",
+    "code": ". .-- -.. --.. .... -..- -..."
+  },
+  {
+    "file": "morse_0.12dur_0000.wav",
+    "duration": 0.12,
+    "text": "BBAMTC4Q",
+    "code": "-... -... .- -- - -.-. ....- --.-"
+  },
+  {
+    "file": "morse_0.12dur_0001.wav",
+    "duration": 0.12,
+    "text": "39XY0R",
+    "code": "...-- ----. -..- -.-- ----- .-."
+  },
+  {
+    "file": "morse_0.12dur_0002.wav",
+    "duration": 0.12,
+    "text": "9U7SVF7O",
+    "code": "----. ..- --... ... ...- ..-. --... ---"
+  }
+]
