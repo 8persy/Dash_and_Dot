@@ -18,6 +18,12 @@ def data_noisy():
 
 
 @pytest.fixture
+def data_variables():
+    with open("dataset/morse_dataset_variables/decodings.json", "r") as f:
+        return json.load(f)
+
+
+@pytest.fixture
 def decodes(data):
     res = []
     for item in data:
@@ -47,6 +53,31 @@ def decodes_noisy(data_noisy):
     res = []
     for item in data_noisy:
         path = f"dataset/morse_dataset_noisy/{item['file']}"
+        expected = item["text"].strip().upper()
+
+        signal, sr = sf.read(path)
+
+        if len(signal) == 0 or np.max(np.abs(signal)) < 1e-3:
+            print(f"[WARNING] Skipping silent or empty file: {path}")
+            continue
+
+        try:
+            # decoded = MorseCode(signal, sample_rate=sr).decode()
+            decoded = MorseCode.from_wavfile(path).decode()
+        except IndexError as e:
+            print(f"[ERROR] Failed to decode {path}: {e}")
+            continue
+
+        res.append((decoded, expected, path))
+
+    return res
+
+
+@pytest.fixture
+def decodes_variable(data_variables):
+    res = []
+    for item in data_variables:
+        path = f"dataset/morse_dataset_variables/{item['file']}"
         expected = item["text"].strip().upper()
 
         signal, sr = sf.read(path)
@@ -99,3 +130,18 @@ def test_noisy_dataset_decoding(decodes_noisy):
     if errors:
         print("\n".join(errors))
         pytest.fail(f"{len(errors)} decoding errors found. Count: {len(decodes_noisy)}")
+
+
+def test_noisy_dataset_variable(decodes_variable):
+    errors = []
+    for decoded, expected, path in decodes_variable:
+        print(f"Checking: {path}")
+        if decoded == expected:
+            print(f"[OK] {path}  expected {expected}, got {decoded}")
+
+        else:
+            errors.append(f"[{path}] expected {expected}, got {decoded}")
+
+    if errors:
+        print("\n".join(errors))
+        pytest.fail(f"{len(errors)} decoding errors found. Count: {len(decodes_variable)}")
