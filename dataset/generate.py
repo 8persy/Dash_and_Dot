@@ -162,6 +162,3 @@ def generate_variable_dataset():
             })
     with open(os.path.join(DATASET_DIR, "decodings.json"), "w") as f:
         json.dump(variable_dataset, f, indent=2)
-
-
-generate_variable_dataset()
