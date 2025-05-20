@@ -17,6 +17,7 @@ FIXED_DOT_DURATION = 0.1
 SPEEDS = [10, 25, 50, 65, 80]
 SAMPLES_PER_SPEED = 3
 NOISE_LEVELS = [0.01, 0.02, 0.05, 0.07, 0.1]
+DOT_DURATIONS = [0.05, 0.07, 0.1, 0.11, 0.12]
 
 # Алфавит Морзе
 MORSE_CODE = {
@@ -36,15 +37,15 @@ def text_to_morse(text):
     return ' '.join([MORSE_CODE[char] for char in text.upper() if char in MORSE_CODE])
 
 
-def generate_morse_audio(text, speed_factor=1.0):
-    t_dot = np.linspace(0, FIXED_DOT_DURATION, int(SAMPLE_RATE * FIXED_DOT_DURATION), False)
+def generate_morse_audio(text, speed_factor=1.0, dot_duration=FIXED_DOT_DURATION):
+    t_dot = np.linspace(0, dot_duration, int(SAMPLE_RATE * dot_duration), False)
     tone_dot = np.sin(2 * np.pi * TONE_FREQ * t_dot)
     tone_dash = np.sin(
-        2 * np.pi * TONE_FREQ * np.linspace(0, 3 * FIXED_DOT_DURATION, int(SAMPLE_RATE * 3 * FIXED_DOT_DURATION), False)
+        2 * np.pi * TONE_FREQ * np.linspace(0, 3 * dot_duration, int(SAMPLE_RATE * 3 * dot_duration), False)
     )
 
-    intra_pause = np.zeros(int(SAMPLE_RATE * FIXED_DOT_DURATION / speed_factor))
-    inter_pause = np.zeros(int(SAMPLE_RATE * 3 * FIXED_DOT_DURATION / speed_factor))
+    intra_pause = np.zeros(int(SAMPLE_RATE * dot_duration / speed_factor))
+    inter_pause = np.zeros(int(SAMPLE_RATE * 3 * dot_duration / speed_factor))
 
     signal = []
     for char in text.upper():
@@ -137,3 +138,30 @@ def generate_noisy_dataset(num_samples=100, noise_levels=None):
     # Сохраняем информацию о зашумлённом датасете
     with open(os.path.join(NOISY_DATASET_DIR, "decodings_noisy.json"), "w") as f:
         json.dump(noisy_dataset, f, indent=2)
+
+
+def generate_variable_dataset():
+    variable_dataset = []
+    DATASET_DIR = 'morse_dataset_variables'
+
+    for duration in DOT_DURATIONS:
+        for i in range(SAMPLES_PER_SPEED):
+            length = np.random.randint(5, 9)
+            text = ''.join(np.random.choice(list(MORSE_CODE.keys()), size=length))
+            morse_code = text_to_morse(text)
+
+            audio = generate_morse_audio(text=text, dot_duration=duration)
+            filename = f"morse_{duration}dur_{i:04d}.wav"
+            sf.write(os.path.join(DATASET_DIR, filename), audio, SAMPLE_RATE)
+
+            variable_dataset.append({
+                "file": filename,
+                "duration": duration,
+                "text": text,
+                "code": morse_code
+            })
+    with open(os.path.join(DATASET_DIR, "decodings.json"), "w") as f:
+        json.dump(variable_dataset, f, indent=2)
+
+
+generate_variable_dataset()
