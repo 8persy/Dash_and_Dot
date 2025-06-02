@@ -67,4 +67,3 @@ def generate_morse_audio(
                 signal.extend(intra_pause)
             signal.extend(inter_pause if char != ' ' else intra_pause * 7)
     return np.array(signal)
-
