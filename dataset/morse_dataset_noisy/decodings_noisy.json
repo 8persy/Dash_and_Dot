@@ -1,0 +1,602 @@
+[
+  {
+    "file": "morse_10wpm_0000_noisy_010.wav",
+    "wpm": 10,
+    "text": "014X22Q",
+    "code": "----- .---- ....- -..- ..--- ..--- --.-",
+    "noisy": true,
+    "noise_level": 0.01
+  },
+  {
+    "file": "morse_10wpm_0000_noisy_020.wav",
+    "wpm": 10,
+    "text": "014X22Q",
+    "code": "----- .---- ....- -..- ..--- ..--- --.-",
+    "noisy": true,
+    "noise_level": 0.02
+  },
+  {
+    "file": "morse_10wpm_0000_noisy_050.wav",
+    "wpm": 10,
+    "text": "014X22Q",
+    "code": "----- .---- ....- -..- ..--- ..--- --.-",
+    "noisy": true,
+    "noise_level": 0.05
+  },
+  {
+    "file": "morse_10wpm_0000_noisy_070.wav",
+    "wpm": 10,
+    "text": "014X22Q",
+    "code": "----- .---- ....- -..- ..--- ..--- --.-",
+    "noisy": true,
+    "noise_level": 0.07
+  },
+  {
+    "file": "morse_10wpm_0000_noisy_100.wav",
+    "wpm": 10,
+    "text": "014X22Q",
+    "code": "----- .---- ....- -..- ..--- ..--- --.-",
+    "noisy": true,
+    "noise_level": 0.1
+  },
+  {
+    "file": "morse_10wpm_0001_noisy_010.wav",
+    "wpm": 10,
+    "text": "OT5MS",
+    "code": "--- - ..... -- ...",
+    "noisy": true,
+    "noise_level": 0.01
+  },
+  {
+    "file": "morse_10wpm_0001_noisy_020.wav",
+    "wpm": 10,
+    "text": "OT5MS",
+    "code": "--- - ..... -- ...",
+    "noisy": true,
+    "noise_level": 0.02
+  },
+  {
+    "file": "morse_10wpm_0001_noisy_050.wav",
+    "wpm": 10,
+    "text": "OT5MS",
+    "code": "--- - ..... -- ...",
+    "noisy": true,
+    "noise_level": 0.05
+  },
+  {
+    "file": "morse_10wpm_0001_noisy_070.wav",
+    "wpm": 10,
+    "text": "OT5MS",
+    "code": "--- - ..... -- ...",
+    "noisy": true,
+    "noise_level": 0.07
+  },
+  {
+    "file": "morse_10wpm_0001_noisy_100.wav",
+    "wpm": 10,
+    "text": "OT5MS",
+    "code": "--- - ..... -- ...",
+    "noisy": true,
+    "noise_level": 0.1
+  },
+  {
+    "file": "morse_10wpm_0002_noisy_010.wav",
+    "wpm": 10,
+    "text": "EW5BPA",
+    "code": ". .-- ..... -... .--. .-",
+    "noisy": true,
+    "noise_level": 0.01
+  },
+  {
+    "file": "morse_10wpm_0002_noisy_020.wav",
+    "wpm": 10,
+    "text": "EW5BPA",
+    "code": ". .-- ..... -... .--. .-",
+    "noisy": true,
+    "noise_level": 0.02
+  },
+  {
+    "file": "morse_10wpm_0002_noisy_050.wav",
+    "wpm": 10,
+    "text": "EW5BPA",
+    "code": ". .-- ..... -... .--. .-",
+    "noisy": true,
+    "noise_level": 0.05
+  },
+  {
+    "file": "morse_10wpm_0002_noisy_070.wav",
+    "wpm": 10,
+    "text": "EW5BPA",
+    "code": ". .-- ..... -... .--. .-",
+    "noisy": true,
+    "noise_level": 0.07
+  },
+  {
+    "file": "morse_10wpm_0002_noisy_100.wav",
+    "wpm": 10,
+    "text": "EW5BPA",
+    "code": ". .-- ..... -... .--. .-",
+    "noisy": true,
+    "noise_level": 0.1
+  },
+  {
+    "file": "morse_25wpm_0000_noisy_010.wav",
+    "wpm": 25,
+    "text": "ZMBEQ5A",
+    "code": "--.. -- -... . --.- ..... .-",
+    "noisy": true,
+    "noise_level": 0.01
+  },
+  {
+    "file": "morse_25wpm_0000_noisy_020.wav",
+    "wpm": 25,
+    "text": "ZMBEQ5A",
+    "code": "--.. -- -... . --.- ..... .-",
+    "noisy": true,
+    "noise_level": 0.02
+  },
+  {
+    "file": "morse_25wpm_0000_noisy_050.wav",
+    "wpm": 25,
+    "text": "ZMBEQ5A",
+    "code": "--.. -- -... . --.- ..... .-",
+    "noisy": true,
+    "noise_level": 0.05
+  },
+  {
+    "file": "morse_25wpm_0000_noisy_070.wav",
+    "wpm": 25,
+    "text": "ZMBEQ5A",
+    "code": "--.. -- -... . --.- ..... .-",
+    "noisy": true,
+    "noise_level": 0.07
+  },
+  {
+    "file": "morse_25wpm_0000_noisy_100.wav",
+    "wpm": 25,
+    "text": "ZMBEQ5A",
+    "code": "--.. -- -... . --.- ..... .-",
+    "noisy": true,
+    "noise_level": 0.1
+  },
+  {
+    "file": "morse_25wpm_0001_noisy_010.wav",
+    "wpm": 25,
+    "text": "IYN1V",
+    "code": ".. -.-- -. .---- ...-",
+    "noisy": true,
+    "noise_level": 0.01
+  },
+  {
+    "file": "morse_25wpm_0001_noisy_020.wav",
+    "wpm": 25,
+    "text": "IYN1V",
+    "code": ".. -.-- -. .---- ...-",
+    "noisy": true,
+    "noise_level": 0.02
+  },
+  {
+    "file": "morse_25wpm_0001_noisy_050.wav",
+    "wpm": 25,
+    "text": "IYN1V",
+    "code": ".. -.-- -. .---- ...-",
+    "noisy": true,
+    "noise_level": 0.05
+  },
+  {
+    "file": "morse_25wpm_0001_noisy_070.wav",
+    "wpm": 25,
+    "text": "IYN1V",
+    "code": ".. -.-- -. .---- ...-",
+    "noisy": true,
+    "noise_level": 0.07
+  },
+  {
+    "file": "morse_25wpm_0001_noisy_100.wav",
+    "wpm": 25,
+    "text": "IYN1V",
+    "code": ".. -.-- -. .---- ...-",
+    "noisy": true,
+    "noise_level": 0.1
+  },
+  {
+    "file": "morse_25wpm_0002_noisy_010.wav",
+    "wpm": 25,
+    "text": "LIOP8OI",
+    "code": ".-.. .. --- .--. ---.. --- ..",
+    "noisy": true,
+    "noise_level": 0.01
+  },
+  {
+    "file": "morse_25wpm_0002_noisy_020.wav",
+    "wpm": 25,
+    "text": "LIOP8OI",
+    "code": ".-.. .. --- .--. ---.. --- ..",
+    "noisy": true,
+    "noise_level": 0.02
+  },
+  {
+    "file": "morse_25wpm_0002_noisy_050.wav",
+    "wpm": 25,
+    "text": "LIOP8OI",
+    "code": ".-.. .. --- .--. ---.. --- ..",
+    "noisy": true,
+    "noise_level": 0.05
+  },
+  {
+    "file": "morse_25wpm_0002_noisy_070.wav",
+    "wpm": 25,
+    "text": "LIOP8OI",
+    "code": ".-.. .. --- .--. ---.. --- ..",
+    "noisy": true,
+    "noise_level": 0.07
+  },
+  {
+    "file": "morse_25wpm_0002_noisy_100.wav",
+    "wpm": 25,
+    "text": "LIOP8OI",
+    "code": ".-.. .. --- .--. ---.. --- ..",
+    "noisy": true,
+    "noise_level": 0.1
+  },
+  {
+    "file": "morse_50wpm_0000_noisy_010.wav",
+    "wpm": 50,
+    "text": "HQP5P7",
+    "code": ".... --.- .--. ..... .--. --...",
+    "noisy": true,
+    "noise_level": 0.01
+  },
+  {
+    "file": "morse_50wpm_0000_noisy_020.wav",
+    "wpm": 50,
+    "text": "HQP5P7",
+    "code": ".... --.- .--. ..... .--. --...",
+    "noisy": true,
+    "noise_level": 0.02
+  },
+  {
+    "file": "morse_50wpm_0000_noisy_050.wav",
+    "wpm": 50,
+    "text": "HQP5P7",
+    "code": ".... --.- .--. ..... .--. --...",
+    "noisy": true,
+    "noise_level": 0.05
+  },
+  {
+    "file": "morse_50wpm_0000_noisy_070.wav",
+    "wpm": 50,
+    "text": "HQP5P7",
+    "code": ".... --.- .--. ..... .--. --...",
+    "noisy": true,
+    "noise_level": 0.07
+  },
+  {
+    "file": "morse_50wpm_0000_noisy_100.wav",
+    "wpm": 50,
+    "text": "HQP5P7",
+    "code": ".... --.- .--. ..... .--. --...",
+    "noisy": true,
+    "noise_level": 0.1
+  },
+  {
+    "file": "morse_50wpm_0001_noisy_010.wav",
+    "wpm": 50,
+    "text": "CB3CR0B",
+    "code": "-.-. -... ...-- -.-. .-. ----- -...",
+    "noisy": true,
+    "noise_level": 0.01
+  },
+  {
+    "file": "morse_50wpm_0001_noisy_020.wav",
+    "wpm": 50,
+    "text": "CB3CR0B",
+    "code": "-.-. -... ...-- -.-. .-. ----- -...",
+    "noisy": true,
+    "noise_level": 0.02
+  },
+  {
+    "file": "morse_50wpm_0001_noisy_050.wav",
+    "wpm": 50,
+    "text": "CB3CR0B",
+    "code": "-.-. -... ...-- -.-. .-. ----- -...",
+    "noisy": true,
+    "noise_level": 0.05
+  },
+  {
+    "file": "morse_50wpm_0001_noisy_070.wav",
+    "wpm": 50,
+    "text": "CB3CR0B",
+    "code": "-.-. -... ...-- -.-. .-. ----- -...",
+    "noisy": true,
+    "noise_level": 0.07
+  },
+  {
+    "file": "morse_50wpm_0001_noisy_100.wav",
+    "wpm": 50,
+    "text": "CB3CR0B",
+    "code": "-.-. -... ...-- -.-. .-. ----- -...",
+    "noisy": true,
+    "noise_level": 0.1
+  },
+  {
+    "file": "morse_50wpm_0002_noisy_010.wav",
+    "wpm": 50,
+    "text": "PAENB",
+    "code": ".--. .- . -. -...",
+    "noisy": true,
+    "noise_level": 0.01
+  },
+  {
+    "file": "morse_50wpm_0002_noisy_020.wav",
+    "wpm": 50,
+    "text": "PAENB",
+    "code": ".--. .- . -. -...",
+    "noisy": true,
+    "noise_level": 0.02
+  },
+  {
+    "file": "morse_50wpm_0002_noisy_050.wav",
+    "wpm": 50,
+    "text": "PAENB",
+    "code": ".--. .- . -. -...",
+    "noisy": true,
+    "noise_level": 0.05
+  },
+  {
+    "file": "morse_50wpm_0002_noisy_070.wav",
+    "wpm": 50,
+    "text": "PAENB",
+    "code": ".--. .- . -. -...",
+    "noisy": true,
+    "noise_level": 0.07
+  },
+  {
+    "file": "morse_50wpm_0002_noisy_100.wav",
+    "wpm": 50,
+    "text": "PAENB",
+    "code": ".--. .- . -. -...",
+    "noisy": true,
+    "noise_level": 0.1
+  },
+  {
+    "file": "morse_65wpm_0000_noisy_010.wav",
+    "wpm": 65,
+    "text": "NJ4AP0B8",
+    "code": "-. .--- ....- .- .--. ----- -... ---..",
+    "noisy": true,
+    "noise_level": 0.01
+  },
+  {
+    "file": "morse_65wpm_0000_noisy_020.wav",
+    "wpm": 65,
+    "text": "NJ4AP0B8",
+    "code": "-. .--- ....- .- .--. ----- -... ---..",
+    "noisy": true,
+    "noise_level": 0.02
+  },
+  {
+    "file": "morse_65wpm_0000_noisy_050.wav",
+    "wpm": 65,
+    "text": "NJ4AP0B8",
+    "code": "-. .--- ....- .- .--. ----- -... ---..",
+    "noisy": true,
+    "noise_level": 0.05
+  },
+  {
+    "file": "morse_65wpm_0000_noisy_070.wav",
+    "wpm": 65,
+    "text": "NJ4AP0B8",
+    "code": "-. .--- ....- .- .--. ----- -... ---..",
+    "noisy": true,
+    "noise_level": 0.07
+  },
+  {
+    "file": "morse_65wpm_0000_noisy_100.wav",
+    "wpm": 65,
+    "text": "NJ4AP0B8",
+    "code": "-. .--- ....- .- .--. ----- -... ---..",
+    "noisy": true,
+    "noise_level": 0.1
+  },
+  {
+    "file": "morse_65wpm_0001_noisy_010.wav",
+    "wpm": 65,
+    "text": "KXQ59U",
+    "code": "-.- -..- --.- ..... ----. ..-",
+    "noisy": true,
+    "noise_level": 0.01
+  },
+  {
+    "file": "morse_65wpm_0001_noisy_020.wav",
+    "wpm": 65,
+    "text": "KXQ59U",
+    "code": "-.- -..- --.- ..... ----. ..-",
+    "noisy": true,
+    "noise_level": 0.02
+  },
+  {
+    "file": "morse_65wpm_0001_noisy_050.wav",
+    "wpm": 65,
+    "text": "KXQ59U",
+    "code": "-.- -..- --.- ..... ----. ..-",
+    "noisy": true,
+    "noise_level": 0.05
+  },
+  {
+    "file": "morse_65wpm_0001_noisy_070.wav",
+    "wpm": 65,
+    "text": "KXQ59U",
+    "code": "-.- -..- --.- ..... ----. ..-",
+    "noisy": true,
+    "noise_level": 0.07
+  },
+  {
+    "file": "morse_65wpm_0001_noisy_100.wav",
+    "wpm": 65,
+    "text": "KXQ59U",
+    "code": "-.- -..- --.- ..... ----. ..-",
+    "noisy": true,
+    "noise_level": 0.1
+  },
+  {
+    "file": "morse_65wpm_0002_noisy_010.wav",
+    "wpm": 65,
+    "text": "YLO0S0",
+    "code": "-.-- .-.. --- ----- ... -----",
+    "noisy": true,
+    "noise_level": 0.01
+  },
+  {
+    "file": "morse_65wpm_0002_noisy_020.wav",
+    "wpm": 65,
+    "text": "YLO0S0",
+    "code": "-.-- .-.. --- ----- ... -----",
+    "noisy": true,
+    "noise_level": 0.02
+  },
+  {
+    "file": "morse_65wpm_0002_noisy_050.wav",
+    "wpm": 65,
+    "text": "YLO0S0",
+    "code": "-.-- .-.. --- ----- ... -----",
+    "noisy": true,
+    "noise_level": 0.05
+  },
+  {
+    "file": "morse_65wpm_0002_noisy_070.wav",
+    "wpm": 65,
+    "text": "YLO0S0",
+    "code": "-.-- .-.. --- ----- ... -----",
+    "noisy": true,
+    "noise_level": 0.07
+  },
+  {
+    "file": "morse_65wpm_0002_noisy_100.wav",
+    "wpm": 65,
+    "text": "YLO0S0",
+    "code": "-.-- .-.. --- ----- ... -----",
+    "noisy": true,
+    "noise_level": 0.1
+  },
+  {
+    "file": "morse_80wpm_0000_noisy_010.wav",
+    "wpm": 80,
+    "text": "MPPGN6",
+    "code": "-- .--. .--. --. -. -....",
+    "noisy": true,
+    "noise_level": 0.01
+  },
+  {
+    "file": "morse_80wpm_0000_noisy_020.wav",
+    "wpm": 80,
+    "text": "MPPGN6",
+    "code": "-- .--. .--. --. -. -....",
+    "noisy": true,
+    "noise_level": 0.02
+  },
+  {
+    "file": "morse_80wpm_0000_noisy_050.wav",
+    "wpm": 80,
+    "text": "MPPGN6",
+    "code": "-- .--. .--. --. -. -....",
+    "noisy": true,
+    "noise_level": 0.05
+  },
+  {
+    "file": "morse_80wpm_0000_noisy_070.wav",
+    "wpm": 80,
+    "text": "MPPGN6",
+    "code": "-- .--. .--. --. -. -....",
+    "noisy": true,
+    "noise_level": 0.07
+  },
+  {
+    "file": "morse_80wpm_0000_noisy_100.wav",
+    "wpm": 80,
+    "text": "MPPGN6",
+    "code": "-- .--. .--. --. -. -....",
+    "noisy": true,
+    "noise_level": 0.1
+  },
+  {
+    "file": "morse_80wpm_0001_noisy_010.wav",
+    "wpm": 80,
+    "text": "T9OUXN",
+    "code": "- ----. --- ..- -..- -.",
+    "noisy": true,
+    "noise_level": 0.01
+  },
+  {
+    "file": "morse_80wpm_0001_noisy_020.wav",
+    "wpm": 80,
+    "text": "T9OUXN",
+    "code": "- ----. --- ..- -..- -.",
+    "noisy": true,
+    "noise_level": 0.02
+  },
+  {
+    "file": "morse_80wpm_0001_noisy_050.wav",
+    "wpm": 80,
+    "text": "T9OUXN",
+    "code": "- ----. --- ..- -..- -.",
+    "noisy": true,
+    "noise_level": 0.05
+  },
+  {
+    "file": "morse_80wpm_0001_noisy_070.wav",
+    "wpm": 80,
+    "text": "T9OUXN",
+    "code": "- ----. --- ..- -..- -.",
+    "noisy": true,
+    "noise_level": 0.07
+  },
+  {
+    "file": "morse_80wpm_0001_noisy_100.wav",
+    "wpm": 80,
+    "text": "T9OUXN",
+    "code": "- ----. --- ..- -..- -.",
+    "noisy": true,
+    "noise_level": 0.1
+  },
+  {
+    "file": "morse_80wpm_0002_noisy_010.wav",
+    "wpm": 80,
+    "text": "Z2LBJYQI",
+    "code": "--.. ..--- .-.. -... .--- -.-- --.- ..",
+    "noisy": true,
+    "noise_level": 0.01
+  },
+  {
+    "file": "morse_80wpm_0002_noisy_020.wav",
+    "wpm": 80,
+    "text": "Z2LBJYQI",
+    "code": "--.. ..--- .-.. -... .--- -.-- --.- ..",
+    "noisy": true,
+    "noise_level": 0.02
+  },
+  {
+    "file": "morse_80wpm_0002_noisy_050.wav",
+    "wpm": 80,
+    "text": "Z2LBJYQI",
+    "code": "--.. ..--- .-.. -... .--- -.-- --.- ..",
+    "noisy": true,
+    "noise_level": 0.05
+  },
+  {
+    "file": "morse_80wpm_0002_noisy_070.wav",
+    "wpm": 80,
+    "text": "Z2LBJYQI",
+    "code": "--.. ..--- .-.. -... .--- -.-- --.- ..",
+    "noisy": true,
+    "noise_level": 0.07
+  },
+  {
+    "file": "morse_80wpm_0002_noisy_100.wav",
+    "wpm": 80,
+    "text": "Z2LBJYQI",
+    "code": "--.. ..--- .-.. -... .--- -.-- --.- ..",
+    "noisy": true,
+    "noise_level": 0.1
+  }
+]
